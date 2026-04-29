@@ -4,6 +4,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 
 from datetime import datetime, date
 from pawpal_system import Task, Pet, Owner, Scheduler, ScheduledItem
+from rag import KnowledgeBase, answer_pet_care_question, initialize_knowledge_base
 
 
 # ── Test 1: mark_complete() stamps last_completed ─────────────────────────────
@@ -219,3 +220,199 @@ def test_detect_conflicts_flags_overlapping_tasks():
 
     assert len(conflicts) == 1, f"Expected 1 conflict, got {len(conflicts)}: {conflicts}"
     assert "CONFLICT" in conflicts[0]
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# RAG Tests
+# ──────────────────────────────────────────────────────────────────────────────
+
+# ── Test 13: Knowledge base loads successfully ────────────────────────────────
+def test_knowledge_base_loads():
+    """Test that the knowledge base initializes and loads documents."""
+    kb = KnowledgeBase(knowledge_base_dir="knowledge_base")
+    
+    # Should have loaded some documents
+    assert len(kb.chunks) > 0, "Knowledge base should have loaded documents"
+    
+    # Should have built TF-IDF index
+    assert kb.vectorizer is not None, "Vectorizer should be initialized"
+    assert kb.tfidf_matrix is not None, "TF-IDF matrix should be built"
+
+
+# ── Test 14: Feeding question retrieves feeding-related content ──────────────
+def test_rag_feeding_question_retrieves_feeding_docs():
+    """Test that a feeding question retrieves feeding guidelines."""
+    kb = KnowledgeBase(knowledge_base_dir="knowledge_base")
+    
+    question = "How often should I feed my dog?"
+    retrieved = kb.retrieve(question, top_k=3)
+    
+    # Should retrieve at least one chunk
+    assert len(retrieved) > 0, "Should retrieve relevant documents for feeding question"
+    
+    # Retrieved chunks should have source information
+    for chunk, score in retrieved:
+        assert hasattr(chunk, "source_file"), "Chunk should have source_file attribute"
+        assert score >= 0.1, "Score should be above minimum threshold"
+
+
+# ── Test 15: Unrelated question is handled safely ───────────────────────────
+def test_rag_unrelated_question_no_crash():
+    """Test that completely unrelated questions don't crash the system."""
+    kb = KnowledgeBase(knowledge_base_dir="knowledge_base")
+    
+    question = "What is the capital of France?"
+    retrieved = kb.retrieve(question, top_k=3)
+    
+    # Even if nothing relevant is found, should not crash
+    assert isinstance(retrieved, list), "Should return a list"
+
+
+# ── Test 16: Medical questions include veterinarian disclaimer ──────────────
+def test_rag_medical_question_includes_disclaimer():
+    """Test that medical questions include a veterinarian warning."""
+    kb = KnowledgeBase(knowledge_base_dir="knowledge_base")
+    
+    question = "My dog has a health issue, what should I do?"
+    answer, sources, success = answer_pet_care_question(question, kb)
+    
+    # Should include veterinarian disclaimer
+    assert "veterinarian" in answer.lower(), "Medical answers should mention veterinarian"
+    assert isinstance(sources, list), "Should return sources list"
+
+
+# ── Test 17: Empty question shows warning ────────────────────────────────────
+def test_rag_empty_question_shows_warning():
+    """Test that empty questions are handled gracefully."""
+    kb = KnowledgeBase(knowledge_base_dir="knowledge_base")
+    
+    answer, sources, success = answer_pet_care_question("", kb)
+    
+    assert not success, "Empty question should not generate answer"
+    assert "question" in answer.lower(), "Should guide user to ask a question"
+
+
+# ── Test 18: Feeding question generates answer with sources ─────────────────
+def test_rag_feeding_answer_has_sources():
+    """Test that feeding questions generate answers with source information."""
+    kb = KnowledgeBase(knowledge_base_dir="knowledge_base")
+    
+    question = "How often should I feed my cat?"
+    answer, sources, success = answer_pet_care_question(question, kb)
+    
+    # Should have generated an answer
+    assert success, "Should successfully answer feeding question"
+    assert len(answer) > 0, "Answer should not be empty"
+    assert isinstance(sources, list), "Should return sources list"
+    
+    # If sources are available, verify structure
+    if sources:
+        for source in sources:
+            assert "source" in source, "Source should have 'source' field"
+            assert "relevance" in source, "Source should have 'relevance' field"
+
+
+# ── Test 19: Answer is grounded in retrieved context ───────────────────────
+def test_rag_answer_uses_retrieved_context():
+    """Test that answers are built from retrieved content, not generic."""
+    kb = KnowledgeBase(knowledge_base_dir="knowledge_base")
+    
+    question = "How often should dogs eat?"
+    answer, sources, success = answer_pet_care_question(question, kb)
+    
+    if success and sources:
+        # Answer should contain some content from the retrieved chunks
+        # (not a perfect test, but checks answer is being constructed)
+        assert len(answer) > 50, "Answer should be substantial and grounded"
+        assert "knowledge base" in answer.lower() or "relevant" in answer.lower(), \
+            "Answer should reference knowledge base"
+
+
+# ── Test 20: Initialize knowledge base singleton ──────────────────────────
+def test_initialize_knowledge_base_singleton():
+    """Test that knowledge base initialization works correctly."""
+    kb1 = initialize_knowledge_base()
+    kb2 = initialize_knowledge_base()
+    
+    # Should return cached instance
+    assert kb1 is kb2, "Should return same cached instance"
+    assert len(kb1.chunks) > 0, "Knowledge base should have documents"
+
+
+# ── Test 21: Vague questions ask for clarification ──────────────────────────
+def test_rag_vague_question_asks_for_clarification():
+    """Test that vague questions prompt for more specific information."""
+    kb = KnowledgeBase(knowledge_base_dir="knowledge_base")
+    
+    vague_questions = [
+        "What should I do to my dog?",
+        "How do I take care of my pet?",
+        "Tell me about my cat",
+        "Help with my dog"
+    ]
+    
+    for question in vague_questions:
+        answer, sources, success = answer_pet_care_question(question, kb)
+        
+        # Should ask for clarification
+        assert "specific" in answer.lower() or "clarification" in answer.lower(), \
+            f"Vague question '{question}' should ask for clarification"
+        assert "feed" in answer.lower() or "groom" in answer.lower() or "behavior" in answer.lower(), \
+            f"Should suggest specific topics for '{question}'"
+        assert success, f"Should handle vague question '{question}' gracefully"
+
+
+# ── Test 22: Weak relevance returns fallback message ────────────────────────
+def test_rag_weak_relevance_fallback():
+    """Test that questions with weak relevance get fallback message."""
+    kb = KnowledgeBase(knowledge_base_dir="knowledge_base")
+    
+    # Question that might have weak relevance
+    question = "What about quantum physics for pets?"
+    answer, sources, success = answer_pet_care_question(question, kb)
+    
+    # Should give fallback message
+    assert "enough relevant information" in answer.lower() or "not enough" in answer.lower(), \
+        "Weak relevance should trigger fallback message"
+    assert "feeding" in answer.lower() or "grooming" in answer.lower(), \
+        "Should suggest valid topics"
+
+
+# ── Test 23: Clean answer generation (no raw chunks) ────────────────────────
+def test_rag_clean_answer_generation():
+    """Test that answers are clean and natural, not raw chunks."""
+    kb = KnowledgeBase(knowledge_base_dir="knowledge_base")
+    
+    question = "How often should I feed my dog?"
+    answer, sources, success = answer_pet_care_question(question, kb)
+    
+    if success:
+        # Answer should not contain raw document markers or excessive length
+        assert len(answer) < 1000, "Answer should be concise, not a dump of raw chunks"
+        assert not answer.startswith("Feed"), "Should not start with raw chunk content"
+        assert "•" in answer or "guidelines" in answer.lower(), \
+            "Should have structured answer format"
+        assert "knowledge base" in answer.lower(), \
+            "Should reference knowledge base"
+
+
+# ── Test 24: Medical questions include vet disclaimer ───────────────────────
+def test_rag_medical_question_vet_disclaimer():
+    """Test that medical questions include veterinarian disclaimer."""
+    kb = KnowledgeBase(knowledge_base_dir="knowledge_base")
+    
+    medical_questions = [
+        "My dog is sick, what should I do?",
+        "My cat has a health problem",
+        "Is this medication safe for pets?",
+        "My pet has an injury"
+    ]
+    
+    for question in medical_questions:
+        answer, sources, success = answer_pet_care_question(question, kb)
+        
+        # Should include veterinarian disclaimer
+        assert "veterinarian" in answer.lower() or "vet" in answer.lower(), \
+            f"Medical question '{question}' should include vet disclaimer"
+        assert "educational only" in answer.lower() or "not a substitute" in answer.lower(), \
+            f"Should clarify educational nature for '{question}'"
