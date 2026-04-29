@@ -1,0 +1,556 @@
+2026-04-28 21:22:27 | Loaded behavior_training.md: 19 chunks
+2026-04-28 21:22:27 | Loaded feeding_guidelines.md: 9 chunks
+2026-04-28 21:22:27 | Loaded grooming_guidelines.md: 14 chunks
+2026-04-28 21:22:27 | Loaded health_safety.md: 28 chunks
+2026-04-28 21:22:27 | Loaded scheduler_help.md: 23 chunks
+2026-04-28 21:22:27 | Loaded behavior_training.md: 19 chunks
+2026-04-28 21:22:27 | Loaded feeding_guidelines.md: 9 chunks
+2026-04-28 21:22:27 | Loaded grooming_guidelines.md: 14 chunks
+2026-04-28 21:22:27 | Loaded health_safety.md: 28 chunks
+2026-04-28 21:22:27 | Loaded scheduler_help.md: 23 chunks
+2026-04-28 21:22:27 | Loaded behavior_training.md: 19 chunks
+2026-04-28 21:22:27 | Loaded feeding_guidelines.md: 9 chunks
+2026-04-28 21:22:27 | Loaded grooming_guidelines.md: 14 chunks
+2026-04-28 21:22:27 | Loaded health_safety.md: 28 chunks
+2026-04-28 21:22:27 | Loaded scheduler_help.md: 23 chunks
+2026-04-28 21:22:27 | Loaded behavior_training.md: 19 chunks
+2026-04-28 21:22:27 | Loaded feeding_guidelines.md: 9 chunks
+2026-04-28 21:22:27 | Loaded grooming_guidelines.md: 14 chunks
+2026-04-28 21:22:27 | Loaded health_safety.md: 28 chunks
+2026-04-28 21:22:27 | Loaded scheduler_help.md: 23 chunks
+2026-04-28 21:22:27 | Q: My dog has a health issue, what should I do? | Sources: scheduler_help.md,health_safety.md,scheduler_help.md | Scores: 0.17,0.13,0.12 | Success: True
+2026-04-28 21:22:27 | Loaded behavior_training.md: 19 chunks
+2026-04-28 21:22:27 | Loaded feeding_guidelines.md: 9 chunks
+2026-04-28 21:22:27 | Loaded grooming_guidelines.md: 14 chunks
+2026-04-28 21:22:27 | Loaded health_safety.md: 28 chunks
+2026-04-28 21:22:27 | Loaded scheduler_help.md: 23 chunks
+2026-04-28 21:22:27 | Loaded behavior_training.md: 19 chunks
+2026-04-28 21:22:27 | Loaded feeding_guidelines.md: 9 chunks
+2026-04-28 21:22:27 | Loaded grooming_guidelines.md: 14 chunks
+2026-04-28 21:22:27 | Loaded health_safety.md: 28 chunks
+2026-04-28 21:22:27 | Loaded scheduler_help.md: 23 chunks
+2026-04-28 21:22:27 | Q: How often should I feed my cat? | Sources: feeding_guidelines.md,feeding_guidelines.md,behavior_training.md | Scores: 0.41,0.39,0.17 | Success: True
+2026-04-28 21:22:27 | Loaded behavior_training.md: 19 chunks
+2026-04-28 21:22:27 | Loaded feeding_guidelines.md: 9 chunks
+2026-04-28 21:22:27 | Loaded grooming_guidelines.md: 14 chunks
+2026-04-28 21:22:27 | Loaded health_safety.md: 28 chunks
+2026-04-28 21:22:27 | Loaded scheduler_help.md: 23 chunks
+2026-04-28 21:22:27 | Q: How often should dogs eat? | Sources: grooming_guidelines.md,scheduler_help.md,feeding_guidelines.md | Scores: 0.36,0.29,0.28 | Success: True
+2026-04-28 21:22:27 | Loaded behavior_training.md: 19 chunks
+2026-04-28 21:22:27 | Loaded feeding_guidelines.md: 9 chunks
+2026-04-28 21:22:27 | Loaded grooming_guidelines.md: 14 chunks
+2026-04-28 21:22:27 | Loaded health_safety.md: 28 chunks
+2026-04-28 21:22:27 | Loaded scheduler_help.md: 23 chunks
+2026-04-28 21:23:19 | Loaded behavior_training.md: 19 chunks
+2026-04-28 21:23:19 | Loaded feeding_guidelines.md: 9 chunks
+2026-04-28 21:23:19 | Loaded grooming_guidelines.md: 14 chunks
+2026-04-28 21:23:19 | Loaded health_safety.md: 28 chunks
+2026-04-28 21:23:19 | Loaded scheduler_help.md: 23 chunks
+2026-04-28 21:27:06 | Loaded behavior_training.md: 19 chunks
+2026-04-28 21:27:06 | Loaded feeding_guidelines.md: 9 chunks
+2026-04-28 21:27:06 | Loaded grooming_guidelines.md: 14 chunks
+2026-04-28 21:27:06 | Loaded health_safety.md: 28 chunks
+2026-04-28 21:27:06 | Loaded scheduler_help.md: 23 chunks
+2026-04-28 21:27:06 | Q: How often should I feed my dog? | Sources: feeding_guidelines.md,feeding_guidelines.md,feeding_guidelines.md | Scores: 0.38,0.33,0.12 | Success: True
+2026-04-28 21:27:06 | Q: What should I do about my cat's dental health? | Sources: health_safety.md,scheduler_help.md,scheduler_help.md | Scores: 0.21,0.17,0.17 | Success: True
+2026-04-28 21:27:06 | Q: My dog has arthritis, what exercises should they do? | Sources: scheduler_help.md,health_safety.md,scheduler_help.md | Scores: 0.24,0.15,0.12 | Success: True
+2026-04-28 21:27:06 | Q: Is chocolate safe for pets? | Sources: scheduler_help.md,behavior_training.md,health_safety.md | Scores: 0.15,0.15,0.15 | Success: True
+2026-04-28 21:33:45 | Loaded behavior_training.md: 19 chunks
+2026-04-28 21:33:45 | Loaded feeding_guidelines.md: 9 chunks
+2026-04-28 21:33:45 | Loaded grooming_guidelines.md: 14 chunks
+2026-04-28 21:33:45 | Loaded health_safety.md: 28 chunks
+2026-04-28 21:33:45 | Loaded scheduler_help.md: 23 chunks
+2026-04-28 21:34:08 | Q: how often should i feed my dog | Sources: feeding_guidelines.md,feeding_guidelines.md,feeding_guidelines.md | Scores: 0.38,0.33,0.12 | Success: True
+2026-04-28 21:35:43 | Q: how often should i feed my dog | Sources: feeding_guidelines.md,feeding_guidelines.md,feeding_guidelines.md | Scores: 0.38,0.33,0.12 | Success: True
+2026-04-28 21:38:50 | Q: what should i do to my dog | Sources: scheduler_help.md,scheduler_help.md,behavior_training.md | Scores: 0.17,0.17,0.16 | Success: True
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Q: My dog has a health issue, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Q: How often should I feed my cat? | Sources: feeding_guidelines.md,feeding_guidelines.md | Scores: 0.37,0.27 | Success: True
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Q: How often should dogs eat? | Sources: scheduler_help.md | Scores: 0.30 | Success: True
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Q: What should I do to my dog? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Q: What about quantum physics for pets? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Q: How often should I feed my dog? | Sources: feeding_guidelines.md,feeding_guidelines.md | Scores: 0.27,0.26 | Success: True
+2026-04-28 21:49:03 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:49:03 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:49:03 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:49:03 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:49:03 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:49:03 | Q: My dog is sick, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:50:37 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:50:37 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:50:37 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:50:37 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:50:37 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:50:37 | Q: My dog has a health issue, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:50:38 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:50:38 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:50:38 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:50:38 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:50:38 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:50:38 | Q: My dog is sick, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:51:58 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:51:58 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:51:58 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:51:58 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:51:58 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:32 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:32 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:32 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:32 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:32 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:32 | Q: My dog has a health issue, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:53:32 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:32 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:32 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:32 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:32 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:32 | Q: My dog is sick, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:53:32 | Q: My cat has a health problem | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:53:32 | Q: Is this medication safe for pets? | Sources: behavior_training.md,behavior_training.md | Scores: 0.37,0.30 | Success: True
+2026-04-28 21:53:32 | Q: My pet has an injury | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:53:46 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:46 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:46 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:46 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:46 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:46 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:46 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:46 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:46 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:46 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:46 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:46 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:46 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:46 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:46 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:46 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:46 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:46 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:46 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:46 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:46 | Q: My dog has a health issue, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:53:46 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:46 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:46 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:46 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:46 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:46 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:46 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:46 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:46 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:46 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:46 | Q: How often should I feed my cat? | Sources: feeding_guidelines.md,feeding_guidelines.md | Scores: 0.37,0.27 | Success: True
+2026-04-28 21:53:46 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:46 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:46 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:46 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:46 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:46 | Q: How often should dogs eat? | Sources: scheduler_help.md | Scores: 0.30 | Success: True
+2026-04-28 21:53:46 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:46 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:46 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:46 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:46 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:46 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:46 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:46 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:46 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:46 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:46 | Q: What should I do to my dog? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:53:47 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:47 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:47 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:47 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:47 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:47 | Q: What about quantum physics for pets? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:53:47 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:47 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:47 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:47 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:47 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:47 | Q: How often should I feed my dog? | Sources: feeding_guidelines.md,feeding_guidelines.md | Scores: 0.27,0.26 | Success: True
+2026-04-28 21:53:47 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:53:47 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:53:47 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:53:47 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:53:47 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:53:47 | Q: My dog is sick, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:53:47 | Q: My cat has a health problem | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:53:47 | Q: Is this medication safe for pets? | Sources: behavior_training.md,behavior_training.md | Scores: 0.37,0.30 | Success: True
+2026-04-28 21:53:47 | Q: My pet has an injury | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:55:13 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:55:13 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:55:13 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:55:13 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:55:13 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:55:13 | Vague question: What should I do to my dog?
+2026-04-28 21:55:13 | Vague question: How do I take care of my pet?
+2026-04-28 21:55:13 | Vague question: Tell me about my cat
+2026-04-28 21:55:13 | Vague question: Help with my dog
+2026-04-28 21:56:01 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:01 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:01 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:01 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:01 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:01 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:01 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:01 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:01 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:01 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:01 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:01 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:01 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:01 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:01 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:01 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:01 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:01 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:01 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:01 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:01 | Q: My dog has a health issue, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:56:01 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:01 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:01 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:01 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:01 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:02 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:02 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:02 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:02 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:02 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:02 | Q: How often should I feed my cat? | Sources: feeding_guidelines.md,feeding_guidelines.md | Scores: 0.37,0.27 | Success: True
+2026-04-28 21:56:02 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:02 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:02 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:02 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:02 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:02 | Q: How often should dogs eat? | Sources: scheduler_help.md | Scores: 0.30 | Success: True
+2026-04-28 21:56:02 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:02 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:02 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:02 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:02 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:02 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:02 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:02 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:02 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:02 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:02 | Vague question: What should I do to my dog?
+2026-04-28 21:56:02 | Vague question: How do I take care of my pet?
+2026-04-28 21:56:02 | Vague question: Tell me about my cat
+2026-04-28 21:56:02 | Vague question: Help with my dog
+2026-04-28 21:56:02 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:02 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:02 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:02 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:02 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:02 | Q: What about quantum physics for pets? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:56:02 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:02 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:02 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:02 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:02 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:02 | Q: How often should I feed my dog? | Sources: feeding_guidelines.md,feeding_guidelines.md | Scores: 0.27,0.26 | Success: True
+2026-04-28 21:56:02 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:02 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:02 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:02 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:02 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:02 | Q: My dog is sick, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:56:02 | Q: My cat has a health problem | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:56:02 | Q: Is this medication safe for pets? | Sources: behavior_training.md,behavior_training.md | Scores: 0.37,0.30 | Success: True
+2026-04-28 21:56:02 | Q: My pet has an injury | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:56:19 | Loaded behavior_training.md: 17 chunks
+2026-04-28 21:56:19 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 21:56:19 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 21:56:19 | Loaded health_safety.md: 25 chunks
+2026-04-28 21:56:19 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 21:56:19 | Q: How often should I feed my dog? | Sources: feeding_guidelines.md,feeding_guidelines.md | Scores: 0.27,0.26 | Success: True
+2026-04-28 21:56:19 | Vague question: What should I do to my dog?
+2026-04-28 21:56:19 | Q: My dog is sick, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 21:56:19 | Q: How do I brush my cat? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:07:13 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:07:13 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:07:13 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:07:13 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:07:13 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:07:50 | Vague question: what should i do with mochi my dog
+2026-04-28 22:08:12 | Q: should i give my dog grapes | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:08:21 | Q: should i give my dog food now | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:08:26 | Q: should i give my dog food | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:08:30 | Q: what i give my dog food | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:08:47 | Q: what should i give my dog  for food | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:09:34 | Vague question: help with dog
+2026-04-28 22:09:47 | Q: how should i groom my dog | Sources: grooming_guidelines.md | Scores: 0.26 | Success: True
+2026-04-28 22:33:55 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:33:55 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:33:55 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:33:55 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:33:55 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:37:13 | Q: How should I groom my cat today | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:38:36 | Q: How should I do grooming for my cat today | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:38:43 | Q: grooming for my cat today | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:38:45 | Q: grooming for my cat today | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:38:46 | Q: grooming for my cat today | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:40:47 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:40:47 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:40:47 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:40:47 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:40:47 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:40:47 | Q: grooming for my cat today | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:40:47 | Q: how do I brush my cat | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:40:47 | Q: How often should I groom my cat? | Sources: grooming_guidelines.md | Scores: 0.26 | Success: True
+2026-04-28 22:40:47 | Vague question: What should I do to groom my cat?
+2026-04-28 22:41:06 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:41:06 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:41:06 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:41:06 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:41:06 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:41:32 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:41:32 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:41:32 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:41:32 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:41:32 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:41:46 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:41:46 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:41:46 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:41:46 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:41:46 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:42:53 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:42:53 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:42:53 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:42:53 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:42:53 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:42:53 | Q: grooming for my cat today | Sources: no_sources | Scores: 0.00 | Success: True
+2026-04-28 22:42:53 | Q: how do I brush my cat | Sources: no_sources | Scores: 0.00 | Success: True
+2026-04-28 22:42:53 | Q: How often should I groom my cat? | Sources: no_sources | Scores: 0.00 | Success: True
+2026-04-28 22:42:53 | Q: What should I do to groom my cat? | Sources: no_sources | Scores: 0.00 | Success: True
+2026-04-28 22:43:29 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:43:29 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:43:29 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:43:29 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:43:29 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:43:29 | Q: grooming for my cat today | Sources: grooming_guidelines.md,grooming_guidelines.md | Scores: 0.13,0.13 | Success: True
+2026-04-28 22:43:29 | Q: how do I brush my cat | Sources: grooming_guidelines.md,grooming_guidelines.md | Scores: 0.16,0.14 | Success: True
+2026-04-28 22:43:29 | Q: How often should I groom my cat? | Sources: grooming_guidelines.md,grooming_guidelines.md | Scores: 0.23,0.20 | Success: True
+2026-04-28 22:43:29 | Q: What should I do to groom my cat? | Sources: grooming_guidelines.md,grooming_guidelines.md | Scores: 0.23,0.20 | Success: True
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Q: My dog has a health issue, what should I do? | Sources: scheduler_help.md,scheduler_help.md,scheduler_help.md | Scores: 0.18,0.17,0.14 | Success: True
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Q: How often should I feed my cat? | Sources: feeding_guidelines.md,feeding_guidelines.md | Scores: 0.31,0.21 | Success: True
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Q: How often should dogs eat? | Sources: feeding_guidelines.md | Scores: 0.16 | Success: True
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Vague question: What should I do to my dog?
+2026-04-28 22:44:12 | Vague question: How do I take care of my pet?
+2026-04-28 22:44:12 | Vague question: Tell me about my cat
+2026-04-28 22:44:12 | Vague question: Help with my dog
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Q: What about quantum physics for pets? | Sources: behavior_training.md,scheduler_help.md,health_safety.md,scheduler_help.md | Scores: 0.19,0.18,0.18,0.18 | Success: True
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Q: How often should I feed my dog? | Sources: feeding_guidelines.md,feeding_guidelines.md | Scores: 0.21,0.21 | Success: True
+2026-04-28 22:44:12 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:12 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:12 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:12 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:12 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:12 | Q: My dog is sick, what should I do? | Sources: scheduler_help.md,behavior_training.md | Scores: 0.16,0.15 | Success: True
+2026-04-28 22:44:12 | Q: My cat has a health problem | Sources: health_safety.md | Scores: 0.13 | Success: True
+2026-04-28 22:44:12 | Q: Is this medication safe for pets? | Sources: behavior_training.md,scheduler_help.md,behavior_training.md,health_safety.md | Scores: 0.32,0.23,0.23,0.21 | Success: True
+2026-04-28 22:44:12 | Q: My pet has an injury | Sources: scheduler_help.md,scheduler_help.md,scheduler_help.md,scheduler_help.md | Scores: 0.28,0.21,0.20,0.19 | Success: True
+2026-04-28 22:44:43 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:43 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:43 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:43 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:43 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:43 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:43 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:43 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:43 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:43 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:43 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:43 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:43 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:43 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:43 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:43 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:43 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:43 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:43 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:43 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:43 | Q: My dog has a health issue, what should I do? | Sources: scheduler_help.md,scheduler_help.md,scheduler_help.md | Scores: 0.18,0.17,0.14 | Success: True
+2026-04-28 22:44:43 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:43 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:43 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:43 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:43 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:43 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:43 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:43 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:43 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:43 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:43 | Q: How often should I feed my cat? | Sources: feeding_guidelines.md,feeding_guidelines.md | Scores: 0.31,0.21 | Success: True
+2026-04-28 22:44:43 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:43 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:43 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:43 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:43 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:43 | Q: How often should dogs eat? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:44:43 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:43 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:43 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:43 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:43 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:43 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:43 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:43 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:43 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:43 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:44 | Vague question: What should I do to my dog?
+2026-04-28 22:44:44 | Vague question: How do I take care of my pet?
+2026-04-28 22:44:44 | Vague question: Tell me about my cat
+2026-04-28 22:44:44 | Vague question: Help with my dog
+2026-04-28 22:44:44 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:44 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:44 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:44 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:44 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:44 | Q: What about quantum physics for pets? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:44:44 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:44 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:44 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:44 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:44 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:44 | Q: How often should I feed my dog? | Sources: feeding_guidelines.md,feeding_guidelines.md | Scores: 0.21,0.21 | Success: True
+2026-04-28 22:44:44 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:44:44 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:44:44 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:44:44 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:44:44 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:44:44 | Q: My dog is sick, what should I do? | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:44:44 | Q: My cat has a health problem | Sources: health_safety.md | Scores: 0.13 | Success: True
+2026-04-28 22:44:44 | Q: Is this medication safe for pets? | Sources: behavior_training.md | Scores: 0.32 | Success: True
+2026-04-28 22:44:44 | Q: My pet has an injury | Sources: scheduler_help.md | Scores: 0.28 | Success: True
+2026-04-28 22:45:23 | Q: how should i do grooming for my cat | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:45:31 | Q: grooming for my cat | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:45:34 | Q: grooming for my cat | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:45:50 | Q: grooming for my cat | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:45:51 | Q: grooming for my cat | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:45:52 | Q: grooming for my cat | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:46:53 | Q: grooming for cat | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:47:05 | Q: how do i groom my cat | Sources: grooming_guidelines.md | Scores: 0.26 | Success: True
+2026-04-28 22:47:09 | Q: how do i groom my cat | Sources: grooming_guidelines.md | Scores: 0.26 | Success: True
+2026-04-28 22:50:32 | Loaded behavior_training.md: 17 chunks
+2026-04-28 22:50:32 | Loaded feeding_guidelines.md: 6 chunks
+2026-04-28 22:50:32 | Loaded grooming_guidelines.md: 10 chunks
+2026-04-28 22:50:32 | Loaded health_safety.md: 25 chunks
+2026-04-28 22:50:32 | Loaded scheduler_help.md: 15 chunks
+2026-04-28 22:50:56 | Q: how should i groom my cat | Sources: grooming_guidelines.md,grooming_guidelines.md | Scores: 0.23,0.20 | Success: True
+2026-04-28 22:51:19 | Vague question: what should i do to my dog
+2026-04-28 22:51:33 | Q: my dog is vomiting and seems sick what should i do | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:56:15 | Q: how do i groom my cat | Sources: grooming_guidelines.md,grooming_guidelines.md | Scores: 0.23,0.20 | Success: True
+2026-04-28 22:57:05 | Q: my dog is vomiting, i need help | Sources: no_sources | Scores: 0.00 | Success: False
+2026-04-28 22:57:56 | Q: how do i get a gaming laptop | Sources: no_sources | Scores: 0.00 | Success: False

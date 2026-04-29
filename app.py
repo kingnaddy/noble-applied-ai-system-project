@@ -1,6 +1,7 @@
 import streamlit as st
 from datetime import date, timedelta
 from pawpal_system import Owner, Pet, Task, Scheduler
+from rag import initialize_knowledge_base, answer_pet_care_question
 
 st.set_page_config(page_title="PawPal+", page_icon="🐾", layout="centered")
 st.title("🐾 PawPal+")
@@ -182,3 +183,60 @@ if st.button("Generate Schedule"):
             st.warning(f"Could not fit {len(scheduler.unscheduled_tasks)} task(s) — no available window:")
             for t in scheduler.unscheduled_tasks:
                 st.markdown(f"- **{t.name}** | {t.priority} priority | {t.duration_minutes} min")
+
+st.divider()
+
+# ──────────────────────────────────────────────────────────────────────────────
+# PawPal+ Pet Care Assistant (RAG Feature)
+# ──────────────────────────────────────────────────────────────────────────────
+
+st.subheader("🤖 Ask PawPal: Pet Care Assistant")
+st.caption("Ask any pet care question and get grounded answers from PawPal's knowledge base.")
+
+# Initialize knowledge base on first load
+if "knowledge_base" not in st.session_state:
+    with st.spinner("Loading knowledge base..."):
+        st.session_state["knowledge_base"] = initialize_knowledge_base()
+
+# User question input
+question = st.text_input(
+    "What would you like to know about pet care?",
+    placeholder="e.g., How often should I feed my cat? What causes dental disease?",
+    key="pet_care_question"
+)
+
+# Process question
+if st.button("Get Answer", key="ask_button"):
+    if not question or not question.strip():
+        st.warning("Please ask a question about pet care.")
+    else:
+        with st.spinner("Searching PawPal's knowledge base..."):
+            kb = st.session_state["knowledge_base"]
+            answer, sources, success = answer_pet_care_question(question, kb)
+        
+        # Display answer
+        st.markdown("#### Answer")
+        st.write(answer)
+        
+        # Display sources if available
+        # if sources:
+        #     st.markdown("#### Sources")
+        #     source_cols = st.columns(len(sources))
+            
+        #     for i, (source, col) in enumerate(zip(sources, source_cols)):
+        #         with col:
+        #             with st.container(border=True):
+        #                 st.markdown(f"**{source['source']}**")
+        #                 st.caption(f"Relevance: {source['relevance']}")
+        #                 st.write(source['content_preview'])
+        # else:
+        #     st.info("No relevant documents found in the knowledge base for this question.")
+        
+        # Log interaction
+        if success:
+            st.success("✓ Answer generated from knowledge base.")
+        else:
+            st.warning(
+                "⚠️ PawPal was unable to find relevant information. "
+                "Consider consulting with a veterinarian."
+            )

@@ -4,6 +4,9 @@
 
 ---
 
+## Loom Video Walkthrough
+[Video Link](https://www.loom.com/share/9ace3708e9314612b9348e74becf73c4) 
+
 ## Project Overview
 
 **Original project:** PawPal+ is an original Module 2 project designed to help busy pet owners manage daily care routines.
