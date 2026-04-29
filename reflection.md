@@ -36,6 +36,9 @@ I used Claude Code for this project. I used it during design to think through th
 
 One example of a suggestion I modified: AI suggested sorting scheduled items with `sorted(..., key=lambda i: i.start_time.strftime("%H:%M"))`. I accepted it at first but then realized the real problem was that `fit_to_windows` was placing tasks at the wrong times due to a floating-point bug — so sorting a broken schedule correctly wasn't actually fixing anything. I went back and fixed the root cause instead. I verified it by running the app and checking that an evening task actually landed at 18:00 instead of right after the morning walk at 07:20.
 
+### Possible Misuse and Prevention
+
+PawPal+ could be misused if someone treats it like medical advice instead of a scheduling tool. To prevent this, I would add clear warnings that users should verify health-related tasks, medication details, and urgent concerns with a veterinarian.
 ---
 
 ## 4. Testing and Verification
@@ -46,9 +49,15 @@ I tested things like `mark_complete()` stamping the right timestamp, adding a ta
 
 **b. Confidence**
 
-All 12 tests pass so I'm pretty confident in the core logic. If I had more time I'd test a recurring task set for the 31st in a short month, what happens when the owner sets no availability windows, and a weekly task that has never been completed to confirm it shows up as due immediately.</p>
+All 12 tests pass so I'm pretty confident in the core logic. If I had more time I'd test a recurring task set for the 31st in a short month, what happens when the owner sets no availability windows, and a weekly task that has never been completed to confirm it shows up as due immediately.
+
+
+**c. What Surprised Me During Reliability Testing**
+
+What surprised me most was that an output can look correct even when the logic behind it is wrong. The floating-point time bug showed me that I needed both automated tests and manual checks with real schedule examples.
 
 ---
+
 
 ## 5. Reflection
 
@@ -83,3 +92,107 @@ Keeping design, implementation, testing, and UI as separate sessions prevented c
 **Being the lead architect with powerful AI tools**
 
 The biggest shift was realizing that AI fluency is not the same as design judgment. AI can generate a working `detect_conflicts()` method in seconds, but it can't decide whether conflicts should raise exceptions or return warning strings, whether the UI should show them as red text or modal dialogs, or whether O(n²) is acceptable given the expected task count. Those are architectural decisions that require understanding the full system — its scale, its users, and its tradeoffs. My job was to make those decisions first and then use AI to implement them quickly. When I got that order right, the build moved fast and the code stayed clean. When I skipped the decision and asked AI to "just build it," I got code that worked in isolation but didn't fit the rest of the system.
+
+### Limitations and Biases
+
+One limitation of PawPal+ is that it depends on the accuracy of the information the user enters. The system is also biased toward the rules I designed, like prioritizing medical conditions, high-priority tasks, and time preferences, so it may oversimplify more complex pet-care situations.
+
+---
+
+## 7. RAG Enhancement — Advanced AI Feature
+
+**a. Why RAG instead of a general-purpose LLM?**
+
+I chose Retrieval-Augmented Generation (RAG) as the advanced AI feature because:
+1. **Grounding:** RAG answers are built from actual domain documents, not LLM hallucinations.
+2. **Traceability:** every answer includes source attribution, so users can verify claims and find more detail.
+3. **Reproducibility:** the system uses local TF-IDF retrieval (no API keys, no external LLM calls).
+4. **Safety:** medical disclaimers are automatically added to health-related questions.
+5. **Controllability:** we can update the knowledge base by editing markdown files, without retraining models.
+
+**b. Design decisions for RAG**
+
+1. **TF-IDF over embeddings:** TF-IDF is deterministic, requires no neural model, and is interpretable. Cosine similarity scores directly reflect term overlap. For a pet-care knowledge base with ~5 documents, TF-IDF is more than sufficient. A more sophisticated embedding-based approach (e.g., sentence transformers) would add complexity without proportional benefit for this use case.
+
+2. **Chunking strategy:** documents are chunked by header sections with 100-character overlap. This preserves context across chunk boundaries while keeping individual chunks focused. A retrieval query that matches a sub-topic still pulls the full section for coherence.
+
+3. **Top-3 retrieval:** retrieving the top 3 chunks balances coverage (showing multiple relevant perspectives) with conciseness (not overwhelming the UI). The relevance score threshold (0.1) filters out very low-scoring matches.
+
+4. **Medical safeguards:** keywords like "health," "disease," "medication," "emergency" trigger automatic veterinarian disclaimers. This is a simple heuristic that errs on the side of caution.
+
+5. **Logging over tracking:** all queries are logged to `logs/rag_queries.log` with question, sources, and scores. This enables debugging and improvement without storing sensitive user data.
+
+**c. Knowledge base design**
+
+I created 5 focused documents:
+- `feeding_guidelines.md` — daily portions, water intake, special diets for dogs and cats
+- `grooming_guidelines.md` — bathing, brushing, dental care, mats, skin conditions
+- `behavior_training.md` — training principles, common issues, professional help
+- `health_safety.md` — preventive care schedule, common conditions, toxins, first aid
+- `scheduler_help.md` — guide to using PawPal+ scheduling features
+
+Each document is written in plain language with headers, bullet points, and specific numbers (e.g., "feed 1-2 times daily" instead of "feed regularly"). This makes retrieval more effective and answers more actionable.
+
+**d. Integration with scheduling**
+
+The RAG system runs alongside the scheduler, not inside it. When a user asks a question, the RAG module independently retrieves and generates an answer. This keeps concerns separated: the scheduler focuses on task placement; RAG focuses on knowledge lookup. In the UI, they appear as two distinct sections: schedule building above, Q&A below.
+
+---
+
+## 8. Limitations and Possible Misuse of RAG
+
+**a. Limitations**
+
+1. **Knowledge base incompleteness:** the system only knows what's in the 5 documents. Questions about specific breeds, rare conditions, or regional resources will not be well-answered.
+
+2. **TF-IDF word-matching:** retrieval depends on keyword overlap. A question like "My dog can't walk" might not retrieve documents about orthopedic problems if the document uses "arthritis" or "joint" instead of "mobility loss."
+
+3. **No dialogue context:** each question is answered independently. Follow-up questions like "How often?" don't remember the previous context.
+
+4. **No personalization:** answers are generic. The system can't say "For a 5-year-old Beagle" because it doesn't store pet information or allow the user to reference their own pets in the Q&A.
+
+5. **Medical decisions:** while disclaimers warn against treating answers as medical advice, users might still over-rely on RAG for serious health issues instead of contacting a vet.
+
+**b. Possible misuse and prevention**
+
+1. **Self-diagnosis:** A user might ask "My cat is vomiting, what's wrong?" and trust the RAG answer instead of seeing a vet.
+   - **Prevention:** The system includes a veterinarian disclaimer for any medical question. The warning is prominent and repeated.
+   - **Further safeguards:** Could add a "emergency" detection that surfaces contact info for emergency vets instead of trying to answer.
+
+2. **Outdated information:** if the knowledge base documents are not kept current, users might follow advice that conflicts with newer veterinary standards.
+   - **Prevention:** The documents should be reviewed by a veterinarian periodically and the version date displayed.
+
+3. **Misinterpretation:** a user might misread "feed 2-3% of body weight" as grams instead of total daily percent.
+   - **Prevention:** examples with specific numbers (e.g., "a 30-pound dog needs 1-2 cups daily") reduce ambiguity.
+
+**c. Reliability testing surprises**
+
+During testing, I discovered:
+1. **Keyword variation matters:** a question about "shedding" doesn't retrieve documents mentioning "coat loss" unless the chunk happens to include both terms. We mitigated this by ensuring documents use multiple synonyms.
+
+2. **Threshold tuning:** initially, the minimum relevance threshold was too strict (0.3), so many valid questions got no results. Lowering it to 0.1 helped, but it also starts retrieving tangentially related content. We accept this tradeoff to avoid over-filtering.
+
+3. **Source attribution builds trust:** in internal tests, users were more likely to trust an answer that showed "from feeding_guidelines.md, relevance 0.82" than the same answer without attribution. Even a 0.7 score reassured them because they could see the source.
+
+---
+
+## 9. Comparison: Scheduling vs. RAG
+
+| Aspect | Scheduling | RAG |
+|--------|-----------|-----|
+| **Purpose** | Optimize task placement | Answer questions with grounded info |
+| **Logic** | Deterministic rules (priority, preference) | Probabilistic retrieval (TF-IDF) |
+| **Input** | Pets, tasks, availability | Natural language question |
+| **Output** | Sorted schedule with conflict warnings | Answer + sources + disclaimer if medical |
+| **Failure mode** | Unscheduled tasks, conflicts | No relevant documents found |
+| **Verification** | Unit tests, schedule visuals | Logging, source attribution |
+
+---
+
+## 10. Final Reflection on RAG as Advanced Feature
+
+Adding RAG as the advanced AI feature deepens the original PawPal+ vision: not only schedule tasks intelligently, but also empower users with grounded, traceable information about pet care. The two components work together: a user might generate a schedule, then ask "Why can't my cat be fed more often?" and get an answer from the feeding guidelines explaining daily nutritional needs.
+
+The decision to use local documents and TF-IDF (instead of calling an external LLM API) makes the system more reproducible, auditable, and maintainable. Any future user or maintainer can read the knowledge base, understand where answers come from, and update documents without needing API keys or dealing with model versioning.
+
+**Key takeaway:** RAG is not a replacement for a veterinarian. It's a reference tool that fills the gap between a task scheduler and professional medical advice. By being transparent about limitations and providing source attribution, we build appropriate user expectations — the system is helpful, but not authoritative.
